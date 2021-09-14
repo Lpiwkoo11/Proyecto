@@ -3,22 +3,26 @@ body {
 }
 
 * {
-    Box-sizing: border box;
-}
-
-/* Logotipo */
-img {
-    display: block;
-    width: 25%;
+    Box-sizing: border-box;
 }
 
 /* Buscador */
 header {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
     margin-right: 2%;
+}
+
+.imagen-logo{
+    width: 20%;
+    height: 50%;
+}
+
+/* Logotipo */
+.imagen-logo img{
+    display: flex;
+    width: 20%;
 }
 
 /* menu de navegacion */
@@ -26,12 +30,13 @@ header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 30px;
 }
 .menu-nav li{
     list-style: none;
     text-align: center;
+    margin-right: 5%;
 }
 
 .menu-nav a{
@@ -46,8 +51,10 @@ header {
     width: 100%;
     align-self: flex-end;
     padding: 50% 0;
-}
-
-p{
     text-align: center;
 }
+
+
+
+
+
