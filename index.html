@@ -9,13 +9,38 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- logotipo -->
     <header>
-        <form action="index.html" method="GET">
-            <input type="text" name="Buscar">
-            <button type="submit">
-                <i class="fas fa-search"></i>
-            </button>
-        </form>
+        <div>
+            <img src="img/la pochoclera.jpeg" alt="logotipo">
+        </div>
+
+        <!-- menu de navegacion -->
+        <nav class="menu-nav">
+            <ul>
+               <li><a href="home.html">Home</a></li>
+               <li><a href="generos.html">Generos</a></li>
+               <li><a href="favoritos.html">Favoritos</a></li>
+               <li><a href="detallepelicula.html">Peliculas</a></li>
+               <li><a href="detalleserie.html">Series</a></li>
+            </ul>
+        </nav>
+
+        <!-- formulario de busqueda -->
+        <div>
+            <form action="resultadosdebusqueda.html" method="GET">
+                <p>
+                    <input type="text" name="Buscar"> 
+                    <button type="submit" name="Buscar">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </p>
+        </div>
     </header>
+
+    <!-- footer -->
+    <footer class="pie-pagina">
+        <p>Lucas Piwko - Martin Lotz - Benjamin Peña</p>
+    </footer>
 </body>
 </html>

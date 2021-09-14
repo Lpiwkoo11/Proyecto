@@ -1,0 +1,53 @@
+body {
+    background-color: midnightblue;
+}
+
+* {
+    Box-sizing: border box;
+}
+
+/* Logotipo */
+img {
+    display: block;
+    width: 25%;
+}
+
+/* Buscador */
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 2%;
+}
+
+/* menu de navegacion */
+.menu-nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.menu-nav li{
+    list-style: none;
+    text-align: center;
+}
+
+.menu-nav a{
+    color: white;
+    text-decoration-line: none;
+}
+
+.pie-pagina{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-self: flex-end;
+    padding: 50% 0;
+}
+
+p{
+    text-align: center;
+}
