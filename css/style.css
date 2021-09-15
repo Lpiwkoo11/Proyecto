@@ -1,39 +1,57 @@
 body {
     background-color: midnightblue;
+    margin:0
 }
 
 * {
     Box-sizing: border-box;
 }
+ul, ol{
+    margin:0;
+    padding:0
+}
+a{
+    text-decoration: none;
+    color:black
+}
 
 /* Buscador */
 header {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    margin-right: 2%;
 }
 
-.imagen-logo{
-    width: 20%;
-    height: 50%;
+/* header div{
+    width: 30%;
+} */
+.div-header{
+    width:40%
 }
 
 /* Logotipo */
-.imagen-logo img{
-    display: flex;
-    width: 20%;
+div img{
+    width: 100%;
 }
+
+.div-logo{
+    width: 8%;
+}
+/* article div{
+    width: 50%
+} */
 
 /* menu de navegacion */
 .menu-nav ul{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 30px;
 }
 .menu-nav li{
+    flex-wrap: wrap;
     list-style: none;
     text-align: center;
     margin-right: 5%;
@@ -42,7 +60,37 @@ header {
 .menu-nav a{
     color: white;
     text-decoration-line: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+/* buscador*/
+.buscador{
+    justify-content: flex-end;
+}
+
+header div, .menu-nav ul, .buscador{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* peliculas populares */
+.peliculas-populares{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.peliculas-populares article{
+    width:18%
+}
+/* .renacido img{
+    box-sizing: content-box;
+    height: 7.5%;
+    width: 200%;
+} */
+
+.parasite 
 
 .pie-pagina{
     color: white;
