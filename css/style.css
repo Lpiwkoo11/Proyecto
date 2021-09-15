@@ -2,6 +2,8 @@ body {
     background-color: rgb(0, 0, 59);
     margin:0;
     font-family: 'Karla', sans-serif;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 * {
@@ -9,11 +11,13 @@ body {
 }
 ul, ol{
     margin:0;
-    padding:0
+    padding:0;
+    align-items: center;
 }
 a{
     text-decoration: none;
-    color:black
+    color:white;
+    text-align: center;
 }
 
 h3{
@@ -28,9 +32,7 @@ header {
     justify-content: space-between;
 }
 
-/* header div{
-    width: 30%;
-} */
+
 .div-header{
     width:40%
 }
@@ -44,9 +46,6 @@ div img{
 .div-logo{
     width: 8%;
 }
-/* article div{
-    width: 50%
-} */
 
 /* menu de navegacion */
 .menu-nav ul{
@@ -113,16 +112,40 @@ header div, .menu-nav ul, .buscador{
 
 .peliculas-populares article{
     color: white;
-    width:18%
+    width:18%;
+    text-align: center;
 }
-/* .renacido img{
-    box-sizing: content-box;
-    height: 7.5%;
-    width: 200%;
-} */
 
-.parasite 
+/* series populares*/
+.series-populares{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
+.series-populares article{
+    color: white;
+    width:18%;
+    text-align: center;
+}
+
+/*series valoradas*/
+.series-valoradas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.series-valoradas article{
+    color: white;
+    width:18%;
+    text-align: center;
+}
+
+
+
+
+/*pie de pagina*/
 .pie-pagina{
     color: white;
     display: flex;
