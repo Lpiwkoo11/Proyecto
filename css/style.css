@@ -1,6 +1,7 @@
 body {
-    background-color: midnightblue;
-    margin:0
+    background-color: rgb(0, 0, 59);
+    margin:0;
+    font-family: 'Karla', sans-serif;
 }
 
 * {
@@ -13,6 +14,10 @@ ul, ol{
 a{
     text-decoration: none;
     color:black
+}
+
+h3{
+    color: white;
 }
 
 /* Buscador */
@@ -33,6 +38,7 @@ header {
 /* Logotipo */
 div img{
     width: 100%;
+    padding: 10%;
 }
 
 .div-logo{
@@ -54,18 +60,42 @@ div img{
     flex-wrap: wrap;
     list-style: none;
     text-align: center;
-    margin-right: 5%;
+    margin-right: 15%;
 }
 
 .menu-nav a{
     color: white;
     text-decoration-line: none;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;   
 }
 
 /* buscador*/
 .buscador{
     justify-content: flex-end;
+}
+
+.buscador input{
+    height: 30px;
+    padding: 0 20px;
+    border-radius: 20px;
+}
+
+.lupa{
+    position: absolute;
+    right: 0%;
+    background: black;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color:white;
+    font-size: 80%;
+    border-radius: 60%;
+}
+
+div form{
+    margin-bottom: 10%;
+    padding-right: 10%;
 }
 
 header div, .menu-nav ul, .buscador{
@@ -82,6 +112,7 @@ header div, .menu-nav ul, .buscador{
 }
 
 .peliculas-populares article{
+    color: white;
     width:18%
 }
 /* .renacido img{
@@ -99,7 +130,11 @@ header div, .menu-nav ul, .buscador{
     width: 100%;
     align-self: flex-end;
     padding: 50% 0;
+}
+
+.pie-pagina p{
     text-align: center;
+    padding-top: 30%;
 }
 
 
