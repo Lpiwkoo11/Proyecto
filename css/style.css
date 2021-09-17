@@ -81,7 +81,6 @@ div img{
 }
 
 .lupa{
-    position: absolute;
     right: 0%;
     background: black;
     width: 45px;
@@ -153,12 +152,10 @@ header div, .menu-nav ul, .buscador{
     flex-direction: column;
     width: 100%;
     align-self: flex-end;
-    padding: 50% 0;
 }
 
 .pie-pagina p{
     text-align: center;
-    padding-top: 5%;
 }
 
 
