@@ -5,10 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <title>Generos</title>
 </head>
 <body>
-    <h1>Generos:</h1>
+    <header>
+        <!-- logotipo -->
+        <div class="div-logo"> 
+            <img src="img/la pochoclera.jpeg" alt="logotipo" class="imagen-logo">
+        </div>
+        <!-- menu de navegacion -->
+        <div class="div-header">
+          <nav class="menu-nav">
+            <ul>
+               <li><a href="home.html">Home</a></li>
+               <li><a href="generos.html">Generos</a></li>
+               <li><a href="favoritos.html">Favoritos</a></li>
+               <li><a href="detallepelicula.html">Peliculas</a></li>
+               <li><a href="detalleserie.html">Series</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- formulario de busqueda -->
+        <div>
+            <form action="resultadosdebusqueda.html" method="GET" class="buscador">
+                <!-- <p> -->
+                    <input type="text" name="Buscar" placeholder="Buscar" required> 
+                    <button class="lupa" type="submit" name="Buscar">
+                        <i class="fas fa-search"></i>
+                    </button>
+                <!-- </p> -->
+            </form>
+        </div>
+  </header>
+    <h1>GENEROS:</h1>
 <div>
     <h3>Películas:</h3>
         <li><a href="detalledelgenero.html">Comedia</a></li>
@@ -22,6 +55,10 @@
         <li><a href="detalledelgenero.html">Drama</a></li>
         <li><a href="detalledelgenero.html">Ficción</a></li>
 </div>
-    
+<!-- footer -->
+<footer class="pie-pagina">
+    <p>Lucas Piwko - Martin Lotz - Benjamin Peña</p>
+ </footer>    
 </body>
+
 </html>

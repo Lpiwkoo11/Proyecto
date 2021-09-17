@@ -148,6 +148,27 @@ header div, .menu-nav ul, .buscador{
     text-align: center;
 }
 
+/*detalle pelicula*/
+.detalle-pelicula{
+    margin: auto;
+    width: 100%;
+}
+.detalle-pelicula-art{
+    width: 30%;
+    margin: auto;
+}
+
+/*detalle serie*/
+.detalle-serie{
+   width: 100%; 
+   margin: auto;
+    
+}
+.detalle-serie-art{
+    width: 30%;
+    margin: auto;
+   
+}
 /*resultado de busqueda*/
 
 .articulo-buscado{
