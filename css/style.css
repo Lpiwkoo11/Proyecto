@@ -145,7 +145,17 @@ header div, .menu-nav ul, .buscador{
     text-align: center;
 }
 
+/*resultado de busqueda*/
 
+.articulo-buscado{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+ }
+
+ .resultado-no-encontrado{
+    display: none;
+ }
 
 
 /*pie de pagina*/
