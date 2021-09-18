@@ -8,20 +8,62 @@
     <title>Generos</title>
 </head>
 <body>
+    <header>
+        <!-- logotipo -->
+        <div class="div-logo"> 
+            <img src="img/la pochoclera.jpeg" alt="logotipo" class="imagen-logo">
+        </div>
+        
+           <a href="#" class="togle-nav">
+            <i class="fas fa-bars"></i>
+           </a>
+       
+        <!-- menu de navegacion -->
+        <div class="div-header">
+          <nav class="menu-nav">
+            <ul>
+               <li><a href="home.html">Home</a></li>
+               <li><a href="generos.html">Generos</a></li>
+               <li><a href="favoritos.html">Favoritos</a></li>
+               <li><a href="detallepelicula.html">Peliculas</a></li>
+               <li><a href="detalleserie.html">Series</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- formulario de busqueda -->
+        <div>
+            <form action="resultadosdebusqueda.html" method="GET" class="buscador">
+                <!-- <p> -->
+                    <input type="text" name="Buscar" placeholder="Buscar" required> 
+                    <button class="lupa" type="submit" name="Buscar">
+                        <i class="fas fa-search"></i>
+                    </button>
+                <!-- </p> -->
+            </form>
+        </div>
+   </header>
+
+   <main>
     <h1>Generos:</h1>
-<div>
-    <h3>Películas:</h3>
-        <li><a href="detalledelgenero.html">Comedia</a></li>
-        <li><a href="detalledelgenero.html">Suspenso</a></li>
-        <li><a href="detalledelgenero.html">Drama</a></li>
-               
-</div>
-<div>
-    <h3>Series:</h3>
-        <li><a href="detalledelgenero.html">Comedia</a></li>
-        <li><a href="detalledelgenero.html">Drama</a></li>
-        <li><a href="detalledelgenero.html">Ficción</a></li>
-</div>
+    <div>
+        <h3>Películas:</h3>
+            <li><a href="detalledelgenero.html">Comedia</a></li>
+            <li><a href="detalledelgenero.html">Suspenso</a></li>
+            <li><a href="detalledelgenero.html">Drama</a></li>
+                   
+    </div>
+    <div>
+        <h3>Series:</h3>
+            <li><a href="detalledelgenero.html">Comedia</a></li>
+            <li><a href="detalledelgenero.html">Drama</a></li>
+            <li><a href="detalledelgenero.html">Ficción</a></li>
+    </div>
+   </main>
+  
+   <!-- footer -->
+   <footer class="pie-pagina">
+    <p>Lucas Piwko - Martin Lotz - Benjamin Peña</p>
+   </footer>
     
 </body>
 </html>

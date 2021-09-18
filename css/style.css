@@ -7,6 +7,7 @@ body {
     margin-right: 30px;
 }
 
+
 * {
     Box-sizing: border-box;
 }
@@ -180,6 +181,9 @@ header div, .menu-nav ul, .buscador{
 @media (max-width:965px){
     .menu-nav{
         display: none;
+    }
+    .togle-nav{
+        display: inline-block;
     }
 }
 /*Mobile*/
