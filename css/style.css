@@ -1,3 +1,4 @@
+/* Body */
 body {
     background-color: rgb(0, 0, 59);
     color: white;
@@ -11,6 +12,7 @@ body {
 * {
     Box-sizing: border-box;
 }
+
 ul, ol{
     margin:0;
     padding:0;
@@ -21,6 +23,7 @@ a{
     color: white;
     text-align: center;
 }
+
 a p{
     text-align: left;
 }
@@ -29,6 +32,7 @@ a p{
 h1{
     text-align: center;
 }
+
 
 /* Header */
 header {
@@ -41,6 +45,7 @@ header {
 .div-header{
     width:40%
 }
+
 
 /* Logotipo */
 div img{
@@ -55,6 +60,7 @@ div img{
     display: none;
 }
 
+
 /* menu de navegacion */
 .menu-nav ul{
     display: flex;
@@ -63,6 +69,7 @@ div img{
     justify-content: space-between;
     margin-bottom: 30px;
 }
+
 .menu-nav li{
     flex-wrap: wrap;
     list-style: none;
@@ -75,6 +82,7 @@ div img{
     text-decoration-line: none;
     font-size: 20px;   
 }
+
 
 /* Formulario de busqueda */
 .buscador{
@@ -110,6 +118,7 @@ header div, .menu-nav ul, .buscador{
     align-items: center;
 }
 
+
 /* peliculas populares */
 .peliculas-populares{
     display: flex;
@@ -122,6 +131,7 @@ header div, .menu-nav ul, .buscador{
     width:18%;
     text-align: center;
 }
+
 
 /* series populares*/
 .series-populares{
@@ -136,6 +146,7 @@ header div, .menu-nav ul, .buscador{
     text-align: center;
 }
 
+
 /*series valoradas*/
 .series-valoradas{
     display: flex;
@@ -149,17 +160,44 @@ header div, .menu-nav ul, .buscador{
     text-align: center;
 }
 
+
+/*detalle pelicula*/
+.detalle-pelicula{
+    margin: auto;
+    width: 100%;
+}
+
+.detalle-pelicula-art{
+    width: 30%;
+    margin: auto;
+}
+
+
+/*detalle serie*/
+.detalle-serie{
+   width: 100%; 
+   margin: auto;
+    
+}
+
+.detalle-serie-art{
+    width: 30%;
+    margin: auto;
+   
+}
+
+
 /*resultado de busqueda*/
 
 .articulo-buscado{
     display: flex;
     flex-direction: row;
     width: 20%;
- }
+}
 
  .resultado-no-encontrado{
     display: none;
- }
+}
 
  
 
@@ -175,6 +213,7 @@ header div, .menu-nav ul, .buscador{
 .pie-pagina p{
     text-align: center;
 }
+
 
 /* Media Queries*/
 /*Tablet*/
