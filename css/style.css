@@ -25,7 +25,7 @@ a{
 }
 
 a p{
-    text-align: left;
+    text-align: center;
 }
 
 
@@ -132,7 +132,6 @@ header div, .menu-nav ul, .buscador{
     text-align: center;
 }
 
-
 /* series populares*/
 .series-populares{
     display: flex;
@@ -171,8 +170,9 @@ header div, .menu-nav ul, .buscador{
     width: 30%;
     margin: auto;
 }
-
-
+a .pc{
+    text-align: left;
+}
 /*detalle serie*/
 .detalle-serie{
    width: 100%; 
@@ -218,18 +218,90 @@ header div, .menu-nav ul, .buscador{
 /* Media Queries*/
 /*Tablet*/
 @media (max-width:965px){
+    .pp{
+        display: flex;
+        justify-content: center;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }   
     .menu-nav{
         display: none;
     }
     .togle-nav{
         display: inline-block;
     }
+    .buscador-div{
+        
+        margin-top: 30px;
+    }
+    .buscador input{   
+        height: 10%;
+        width: 100%;
+        padding: 0 20px;
+        border-radius: 15px;
+    }
+    .div-header{display: none;}
+    .lupa{
+        right: 0%;
+        background: black;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        color:white;
+        font-size: 80%;
+        border-radius: 60%;
+    }
+
 }
 /*Mobile*/
-@media (max-width:420px){
+@media (max-width:520px){
+    /*header*/
+    header{
+        display: flex;
+        justify-content: space-between;
+    }   
+    .div-header{
+        display: none;
+    }
+    .lupa{
+        right: 0%;
+        background: black;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        color:white;
+        font-size: 80%;
+        border-radius: 60%;
+    }
+    .buscador-div{
+        width: 65%;
+    }
+    .buscador input{    
+        height: 10%;
+        width: 100%;
+        padding: 0 10px;
+        border-radius: 15px;
+    }
+    /*Main*/
     .menu-nav{
         display: none;
     }
+    .peliculas-populares{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .peliculas-populares article{
+        color: white;
+        width:80%;
+        text-align: center;
+    }
+    
 }
 
 
