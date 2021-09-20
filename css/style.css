@@ -188,7 +188,6 @@ a .pc{
 
 
 /*resultado de busqueda*/
-
 .articulo-buscado{
     display: flex;
     flex-direction: row;
@@ -199,7 +198,36 @@ a .pc{
     display: none;
 }
 
- 
+
+/*generos*/
+.series-div{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.series-art{
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+.generos-section{
+    display: flex;
+    justify-content: space-around;
+}
+.peliculas-div{
+    width: 100%;
+    margin: auto;
+}
+.peliculas-art{
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+.generos-peliculas{
+    display: flex;
+    justify-content: space-around;
+}
+
 
 /*pie de pagina*/
 .pie-pagina{
@@ -209,10 +237,10 @@ a .pc{
     width: 100%;
     align-self: flex-end;
 }
-
 .pie-pagina p{
     text-align: center;
 }
+.pie-alternativo{display: none;}
 
 
 /* Media Queries*/
@@ -257,8 +285,19 @@ a .pc{
     }
 
 }
+
 /*Mobile*/
 @media (max-width:520px){
+    /* Body */
+    body {
+        background-color: rgb(0, 0, 59);
+        color: white;
+        margin:0;
+        font-family: 'Karla', sans-serif;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
     /*header*/
     header{
         display: flex;
@@ -270,8 +309,8 @@ a .pc{
     .lupa{
         right: 0%;
         background: black;
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
         line-height: 20px;
         text-align: center;
         color:white;
@@ -287,6 +326,14 @@ a .pc{
         padding: 0 10px;
         border-radius: 15px;
     }
+    .togle-nav{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .div-logo{
+        display: none;
+    }
+    
     /*Main*/
     .menu-nav{
         display: none;
@@ -301,7 +348,60 @@ a .pc{
         width:80%;
         text-align: center;
     }
-    
+
+    /*pagina generos*/
+    .generos-peliculas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .generos-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .series-div{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .series-art{
+        width: 85%;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 15%;
+    }
+    .peliculas-div{
+        width: 100%;
+        margin: auto;
+    }
+    .peliculas-art{
+        width: 85%;
+        margin: auto;
+        text-align: center;
+    }
+
+    /*pie de pagina*/
+    .pie-pagina{
+        display: none;        
+    }
+    .pie-alternativo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .pie-alternativo p{
+        text-align:center;
+        margin: 3px 3px;
+    }
+    .p-generos{
+        text-align: left;
+        width: 30%;
+    }
+    .p-generos-1{
+        text-align: left;
+        width: 40px;
+    }
 }
 
 
