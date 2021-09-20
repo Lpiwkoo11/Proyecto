@@ -11,176 +11,177 @@
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-
 <body>
-      <header>
-         <!-- logotipo -->
-         <div class="div-logo"> 
-             <img src="img/la pochoclera.jpeg" alt="logotipo" class="imagen-logo">
-         </div>
-         <!-- menu de navegacion -->
-         <div class="div-header">
-           <nav class="menu-nav">
-             <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="generos.html">Generos</a></li>
-                <li><a href="favoritos.html">Favoritos</a></li>
-                <li><a href="detallepelicula.html">Peliculas</a></li>
-                <li><a href="detalleserie.html">Series</a></li>
-             </ul>
-           </nav>
-         </div>
-         <!-- formulario de busqueda -->
-         <div class="buscador-div">
-             <form action="resultadosdebusqueda.html" method="GET" class="buscador">
-                 <!-- <p> -->
-                     <input type="text" name="Buscar" placeholder="Buscar" required> 
-                     <button class="lupa" type="submit" name="Buscar">
-                         <i class="fas fa-search"></i>
-                     </button>
-                 <!-- </p> -->
-             </form>
-         </div>
-         <a href="#" class="togle-nav">
-             <i class="fas fa-bars"></i>
-         </a>
-    </header>
-    
+   <header>
+          <!-- logotipo -->
+          <div class="div-logo"> 
+              <img src="img/la pochoclera.jpeg" alt="logotipo" class="imagen-logo">
+          </div>
+          
+          <a href="#" class="togle-nav">
+              <i class="fas fa-bars"></i>
+          </a>
+         
+          <!-- menu de navegacion -->
+          <div class="div-header">
+            <nav class="menu-nav">
+              <ul>
+                 <li><a href="home.html">Home</a></li>
+                 <li><a href="generos.html">Generos</a></li>
+                 <li><a href="favoritos.html">Favoritos</a></li>
+                 <li><a href="detallepelicula.html">Peliculas</a></li>
+                 <li><a href="detalleserie.html">Series</a></li>
+              </ul>
+            </nav>
+          </div>
+          <!-- formulario de busqueda -->
+          <div>
+            <form action="resultadosdebusqueda.html" method="GET" class="buscador">
+                <!-- <p> -->
+                   <input type="text" name="Buscar" placeholder="Buscar" required> 
+                   <button class="lupa" type="submit" name="Buscar">
+                      <i class="fas fa-search"></i>
+                   </button>
+                <!-- </p> -->
+            </form>
+          </div>
+   </header>
+     
    <!-- Contenido -->
    <main>
-    <!-- Peliculas populares -->
- <h3 class="pp">PELICULAS POPULARES</h3>
- 
- <section class="peliculas-populares">
-    <article>
-       <div>
-         <img src="img/peliculas populares/avengersendgame.jpg" alt="pelicula">
-       </div>
-       <h5>The Avengers</h5>
-       <p>26/04/2019</p>
-    </article>
-    <article>
-      <div>
-         <img src="img/peliculas populares/elrenacido.jpg" alt="pelicula">
-      </div>
-      <h5>El renacido</h5>
-      <p>22/08/2018</p>
-    </article>
-    <article>
-       <a href="./detallepelicula.html">
-          <div> 
-            <img src="img/peliculas populares/parasite.jpg" alt="pelicula">
-          </div>
-          <h5>Parasite</h5>
-          <p>2/02/2020</p>
-       </a>
-    </article>
-    <article>
-      <div>
-         <img src="img/peliculas populares/rapidosyfuriosos7.jpg" alt="pelicula">
-      </div>
-      <h5>Rapidos y Furiosos 7</h5>
-      <p>22/08/2018</p>
-    </article>
-    <article >
-      <div>
-         <img src="img/peliculas populares/thepurge1.jpg" alt="pelicula">
-      </div>
-      <h5>The Purge</h5>
-      <p>2/02/2020</p>
-    </article>
- </section>
- 
- 
- <!--Series populares-->
- <h3>SERIES POPULARES</h3>
- 
- <section class="series-populares">
- <article>
-    <div>
-      <img src="img/series populares/peakyblinders.jpg" alt="serie">
-    </div>
-   <h5>Peaky Blinders</h5>
-   <p>30/09/2016</p>
- </article>
- <article>
-    <div>
-      <img src="img/series populares/whitecollar.jpg" alt="serie">
-    </div>
-   <h5>White Collar</h5>
-   <p>28/02/2015</p>
- </article>
- <article>
-    <div>
-      <img src="img/series populares/bettercaulsaul.jpg" alt="serie">
-    </div>
-   <h5>Better Caul Saul</h5>
-   <p>13/08/2019</p>
- </article>
- <article>
-    <a href="./detalleserie.html">
-       <div>
-         <img src="img/series populares/suits.jpg" alt="serie">
-       </div>
-      <h5>Suits</h5>
-      <p>14/09/2014</p>
-    </a>
- </article>
- <article >
-     <div>
-       <img src="img/series populares/blacklist.jpg" alt="serie">
-     </div>
-     <h5>The Blacklist</h5>
-     <p>23/08/2013</p>
- </article>
- </section>
- 
- 
- <!--Series mas valoradas-->
- <h3>SERIES MAS VALORADAS</h3>
- 
- <section class="series-valoradas">
- <article>
-     <div>
-       <img src="img/series valoradas/breakingbad.jpg" alt="serie">
-     </div>
-     <h5>Breaking Bad</h5>
-     <p>20/01/2008</p>
- </article>
- <article>
-    <div>
-       <img src="img/series valoradas/theoffice.jpg" alt="serie">
-    </div>
-    <h5>The Office</h5>
-    <p>24/03/2005</p>
- </article>
- <article>
-    <div>
-       <img src="img/series valoradas/prisionbreak.jpg" alt="serie">
-    </div>
-    <h5>Prison Break</h5>
-    <p>29/07/2005</p>
- </article>
- <article>
-    <div>
-       <img src="img/series valoradas/gameofthrones.jpg" alt="serie">
-    </div>
-    <h5>Game of Thrones</h5>
-    <p>30/04/2012</p>
- </article>
- <article >
-    <div>
-       <img src="img/series valoradas/casadepapel.jpg" alt="serie">
-    </div>
-    <h5>La casa de papel</h5>
-    <p>04/08/2018</p>
- </article>
- </section>
-    </main>
- 
-    <!-- footer -->
-    <footer class="pie-pagina">
-      <p>Lucas Piwko - Martin Lotz - Benjamin Peña</p>
-    </footer>
-</body>
+      <!-- Peliculas populares -->
+      <h3>PELICULAS POPULARES</h3>
+  
+      <section class="peliculas-populares">
+         <article>
+           <div>
+              <img src="img/peliculas populares/avengersendgame.jpg" alt="pelicula">
+           </div>
+           <h5>The Avengers</h5>
+           <p>26/04/2019</p>
+         </article>
+         <article>
+           <div>
+              <img src="img/peliculas populares/elrenacido.jpg" alt="pelicula">
+           </div>
+           <h5>El renacido</h5>
+           <p>22/08/2018</p>
+         </article>
+         <article>
+            <a href="./detallepelicula.html">
+               <div> 
+                 <img src="img/peliculas populares/parasite.jpg" alt="pelicula">
+               </div>
+               <h5>Parasite</h5>
+               <p>2/02/2020</p>
+            </a>
+         </article>
+         <article>
+           <div>
+              <img src="img/peliculas populares/rapidosyfuriosos7.jpg" alt="pelicula">
+           </div>
+           <h5>Rapidos y Furiosos 7</h5>
+           <p>22/08/2018</p>
+         </article>
+         <article >
+           <div>
+              <img src="img/peliculas populares/thepurge1.jpg" alt="pelicula">
+           </div>
+           <h5>The Purge</h5>
+           <p>2/02/2020</p>
+         </article>
+      </section>
+  
+  
+      <!--Series populares-->
+      <h3>SERIES POPULARES</h3>
+  
+      <section class="series-populares">
+         <article>
+           <div>
+              <img src="img/series populares/peakyblinders.jpg" alt="serie">
+           </div>
+           <h5>Peaky Blinders</h5>
+           <p>30/09/2016</p>
+         </article>
+         <article>
+           <div>
+              <img src="img/series populares/whitecollar.jpg" alt="serie">
+           </div>
+           <h5>White Collar</h5>
+           <p>28/02/2015</p>
+         </article>
+         <article>
+           <div>
+              <img src="img/series populares/bettercaulsaul.jpg" alt="serie">
+           </div>
+           <h5>Better Caul Saul</h5>
+           <p>13/08/2019</p>
+         </article>
+         <article>
+            <a href="./detalleserie.html">
+              <div>
+                 <img src="img/series populares/suits.jpg" alt="serie">
+              </div>
+              <h5>Suits</h5>
+              <p>14/09/2014</p>
+            </a>
+         </article>
+         <article >
+           <div>
+              <img src="img/series populares/blacklist.jpg" alt="serie">
+           </div>
+           <h5>The Blacklist</h5>
+           <p>23/08/2013</p>
+         </article>
+      </section>
+  
+  
+      <!--Series mas valoradas-->
+      <h3>SERIES MAS VALORADAS</h3>
+  
+      <section class="series-valoradas">
+         <article>
+           <div>
+              <img src="img/series valoradas/breakingbad.jpg" alt="serie">
+           </div>
+           <h5>Breaking Bad</h5>
+           <p>20/01/2008</p>
+         </article>
+         <article>
+           <div>
+              <img src="img/series valoradas/theoffice.jpg" alt="serie">
+           </div>
+           <h5>The Office</h5>
+           <p>24/03/2005</p>
+         </article>
+         <article>
+           <div>
+              <img src="img/series valoradas/prisionbreak.jpg" alt="serie">
+           </div>
+           <h5>Prison Break</h5>
+           <p>29/07/2005</p>
+         </article>
+         <article>
+           <div>
+               <img src="img/series valoradas/gameofthrones.jpg" alt="serie">
+           </div>
+           <h5>Game of Thrones</h5>
+           <p>30/04/2012</p>
+         </article>
+         <article >
+           <div>
+              <img src="img/series valoradas/casadepapel.jpg" alt="serie">
+           </div>
+           <h5>La casa de papel</h5>
+           <p>04/08/2018</p>
+         </article>
+      </section>
+   </main>
+  
+  <!-- footer -->
+  <footer class="pie-pagina">
+     <p>Lucas Piwko - Martin Lotz - Benjamin Peña</p>
+  </footer>
+ </body>
 </html>

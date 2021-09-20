@@ -348,6 +348,26 @@ a .pc{
         width:80%;
         text-align: center;
     }
+    .series-populares{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .series-populares article{
+        color: white;
+        width: 80%;
+        text-align: center;
+    }
+    .series-valoradas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .series-valoradas article{
+        color: white;
+        width: 80%;
+        text-align: center;
+    }
 
     /*pagina generos*/
     .generos-peliculas{
