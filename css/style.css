@@ -369,6 +369,7 @@ a .pc{
         text-align: center;
     }
 
+
     /*pagina generos*/
     .generos-peliculas{
         display: flex;
@@ -382,24 +383,21 @@ a .pc{
     }
     .series-div{
         width: 100%;
-        margin: auto;
         text-align: center;
     }
     .series-art{
         width: 85%;
-        margin: auto;
         text-align: center;
         padding-bottom: 15%;
     }
     .peliculas-div{
         width: 100%;
-        margin: auto;
     }
     .peliculas-art{
         width: 85%;
-        margin: auto;
         text-align: center;
     }
+
 
     /*pie de pagina*/
     .pie-pagina{
