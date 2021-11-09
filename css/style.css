@@ -60,6 +60,17 @@ div img{
     display: none;
 }
 
+.imagen-logoMovie{
+    width: 100%;
+    padding: 10%;
+}
+
+.div-logoMovie{
+    width: 8%;
+}
+
+
+
 
 /* menu de navegacion */
 .menu-nav ul{
