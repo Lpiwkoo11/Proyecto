@@ -15,11 +15,11 @@ fetch(`https://developers.themoviedb.org/3/movies/${id}?api_key=f2acabc2f1f7dfa2
         return response.json();
     })
     .then(function(datos){
-        console.log(datos.results);
+        console.log(datos.genres);
         document.querySelector('main').innerHTML = `
         <article class="detalle-pelicula-art">
             <div class="Detalle-pelicula">
-                <img src="https://image.tmdb.org/t/p/w342/"${datos.results.poster_path} alt="Banner Parasite">
+                <img src="https://image.tmdb.org/t/p/w342/"${datos.genres.poster_path} alt="Banner Parasite">
             </div>
         </article>
         <H1>Parasite</H1>
