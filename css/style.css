@@ -158,13 +158,13 @@ header div, .menu-nav ul, .buscador{
 
 
 /*series valoradas*/
-.series-valoradas{
+.peliculas-valoradas{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.series-valoradas article{
+.peliculas-valoradas article{
     color: white;
     width:18%;
     text-align: center;
@@ -369,12 +369,12 @@ a .pc{
         width: 80%;
         text-align: center;
     }
-    .series-valoradas{
+    .peliculas-valoradas{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .series-valoradas article{
+    .peliculas-valoradas article{
         color: white;
         width: 80%;
         text-align: center;
