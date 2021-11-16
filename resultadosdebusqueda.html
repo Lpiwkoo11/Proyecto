@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <title>Document</title>
+    <script src="js/validacion.js"></script>
+    <script src="/js/search-results.js"></script>
+    
 </head>
 <body>
  <header>
@@ -38,6 +41,7 @@
                       <button class="lupa" type="submit" name="Buscar">
                         <i class="fas fa-search"></i>
                       </button>
+                      <p class="alerta"></p>
                 <!-- </p> -->
             </form>
         </div>
@@ -49,7 +53,7 @@
  <main>
     <h3>RESULTADO DE BUSQUEDA:</h3>
     <!--Termino buscado-->
-    <h4>Parasite</h4>
+    <h4 class="terminobuscado"></h4>
       <div class="articulo-buscado">
         <article>
           <a href="./detallepelicula.html">
@@ -72,5 +76,6 @@
    </div>
   </footer>
 
+    
 </body>
 </html>

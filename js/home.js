@@ -1,5 +1,3 @@
-window.addEventListener('load', function(){
-
 // fetch
 
 fetch(`https://api.themoviedb.org/3/movie/550?api_key=f2acabc2f1f7dfa29f6493c2fcca003f`)
@@ -68,4 +66,5 @@ fetch(`https://api.themoviedb.org/3/movie/550?api_key=f2acabc2f1f7dfa29f6493c2fc
 
 
 
-})
+
+
