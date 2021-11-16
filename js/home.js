@@ -1,56 +1,83 @@
 // fetch
 
-fetch(`https://api.themoviedb.org/3/movie/550?api_key=f2acabc2f1f7dfa29f6493c2fcca003f`)
+// peliculas populares
+fetch(`https://api.themoviedb.org/3/movie/popular?api_key=f2acabc2f1f7dfa29f6493c2fcca003f`)
     .then(function(response){
         return response.json();
     })
     .then(function(datos){
 
-        console.log(datos.genres);
+        console.log(datos.results);
 
-        for(let i = 0; i < datos.genres.lenght; i++){
+        for(let i = 0; i < 5; i++){
             document.querySelector('.peliculas-populares').innerHTML += `
             <article>
                 <div>
-                    <img src="${datos.genres[i].poster_path}" alt="pelicula">
+                <img src="https://image.tmdb.org/t/p/w342${datos.results[i].poster_path}" alt="pelicula">
                 </div>
-                <h5>The Avengers</h5>
-                <p>26/04/2019</p>
-            </article>
-            <article>
-                <div>
-                    <img src="img/peliculas populares/elrenacido.jpg" alt="pelicula">
-                </div>
-                <h5>El renacido</h5>
-                <p>22/08/2018</p>
-            </article>
-            <article>
-                <a href="./detallepelicula.html">
-                    <div> 
-                        <img src="img/peliculas populares/parasite.jpg" alt="pelicula">
-                    </div>
-                    <h5>Parasite</h5>
-                    <p>2/02/2020</p>
-                </a>
-            </article>
-            <article>
-                <div>
-                    <img src="img/peliculas populares/rapidosyfuriosos7.jpg" alt="pelicula">
-                </div>
-                <h5>Rapidos y Furiosos 7</h5>
-                <p>22/08/2018</p>
-            </article>
-            <article >
-                <div>
-                    <img src="img/peliculas populares/thepurge1.jpg" alt="pelicula">
-                </div>
-                <h5>The Purge</h5>
-                <p>2/02/2020</p>
+                <h5>${datos.results[i].title}</h5>
+                <p>${datos.results[i].release_date}</p>
+                <a href="detallepelicula.js?id=${datos.results[i].id}"Ver mas informacion</a>
             </article>
             `;
-        }
+        };
+    })
+    .catch(function(error){
+        console.log("error:" + error);
     })
 
+// series populares
+fetch(`https://api.themoviedb.org/3/tv/popular?api_key=f2acabc2f1f7dfa29f6493c2fcca003f`)
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(datos){
+
+        console.log(datos.results);
+
+        for(let i = 0; i < 5; i++){
+            document.querySelector('.series-populares').innerHTML += `
+            <article>
+                <div>
+                <img src="https://image.tmdb.org/t/p/w342${datos.results[i].poster_path}" alt="pelicula">
+                </div>
+                <h5>${datos.results[i].original_name}</h5>
+                <p>${datos.results[i].first_air_date}</p>
+            </article>
+            `;
+        };
+    })
+    .catch(function(error){
+        console.log("error:" + error);
+    })
+
+// peliculas valoradas
+fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=f2acabc2f1f7dfa29f6493c2fcca003f`)
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(datos){
+
+        console.log(datos.results);
+
+        for(let i = 0; i < 5; i++){
+            document.querySelector('.peliculas-valoradas').innerHTML += `
+            <article>
+                <div>
+                <img src="https://image.tmdb.org/t/p/w342${datos.results[i].poster_path}" alt="pelicula">
+                </div>
+                <h5>${datos.results[i].original_title}</h5>
+                <p>${datos.results[i].release_date}</p>
+            </article>
+            `;
+        };
+    })
+    .catch(function(error){
+        console.log("error:" + error);
+    })
+});
+
+<<<<<<< HEAD
 
 
 
@@ -68,3 +95,5 @@ fetch(`https://api.themoviedb.org/3/movie/550?api_key=f2acabc2f1f7dfa29f6493c2fc
 
 
 
+=======
+>>>>>>> f3f6a45550c7460637fc6470a8a6682f96617076
