@@ -75,25 +75,5 @@ fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=f2acabc2f1f7dfa29f64
     .catch(function(error){
         console.log("error:" + error);
     })
-});
-
-<<<<<<< HEAD
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
->>>>>>> f3f6a45550c7460637fc6470a8a6682f96617076
