@@ -43,6 +43,7 @@ fetch(`https://api.themoviedb.org/3/tv/popular?api_key=f2acabc2f1f7dfa29f6493c2f
                 </div>
                 <h5>${datos.results[i].original_name}</h5>
                 <p>${datos.results[i].first_air_date}</p>
+                <a href="detalleserie.html?id=${datos.results[i].id}">Ver mas informacion</a>
             </article>
             `;
         };
@@ -68,6 +69,7 @@ fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=f2acabc2f1f7dfa29f64
                 </div>
                 <h5>${datos.results[i].original_title}</h5>
                 <p>${datos.results[i].release_date}</p>
+                <a href="detallepelicula.html?id=${datos.results[i].id}">Ver mas informacion</a>
             </article>
             `;
         };

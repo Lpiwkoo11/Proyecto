@@ -10,6 +10,8 @@ let id = objetoQueryString.get('id');
 console.log(id);
 
 // Fetch
+// Peliculas populares
+
 fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=f2acabc2f1f7dfa29f6493c2fcca003f&language=es`)
     .then(function(response){
         return response.json();
@@ -33,28 +35,7 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=f2acabc2f1f7dfa29f6493c2
         console.log("error:" + error);
     })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// peliculas valoradas
 
 
 
