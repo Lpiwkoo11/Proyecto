@@ -10,7 +10,7 @@ let id = objetoQueryString.get('id');
 console.log(id);
 
 // Fetch
-fetch(`https://developers.themoviedb.org/3/movies/get-movie-details${id}?api_key=f2acabc2f1f7dfa29f6493c2fcca003f`)
+fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=f2acabc2f1f7dfa29f6493c2fcca003f&language=es`)
     .then(function(response){
         return response.json();
     })
@@ -21,11 +21,11 @@ fetch(`https://developers.themoviedb.org/3/movies/get-movie-details${id}?api_key
         document.querySelector('main').innerHTML = `
             <article>
                 <div>
-                <img src="https://image.tmdb.org/t/p/w342${datos.results.poster_path}" alt="pelicula">
+                <img src="https://image.tmdb.org/t/p/w342${datos.poster_path}" alt="pelicula">
                 </div>
-                <h5>${datos.results.title}</h5>
-                <p>${datos.results.release_date}</p>
-                <p>${datos.results.id}</p>
+                <h5>${datos.title}</h5>
+                <p>${datos.release_date}</p>
+                <p>${datos.id}</p>
             </article>
         `;
     })
