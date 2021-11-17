@@ -75,5 +75,3 @@ fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=f2acabc2f1f7dfa29f64
     .catch(function(error){
         console.log("error:" + error);
     })
-
-
