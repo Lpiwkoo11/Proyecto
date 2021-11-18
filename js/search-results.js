@@ -4,8 +4,8 @@ window.addEventListener('load', function(){
     
     let queryString = location.search;
     let objetoQueryString = new URLSearchParams(queryString);
-    let busqueda = objetoQueryString.get('.buscador');
-    console.log(buscador);
+    let busqueda = objetoQueryString.get('.buscar');
+    console.log(busqueda);
     
     // fetch
     
