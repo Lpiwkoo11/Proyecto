@@ -33,7 +33,6 @@ h1{
     text-align: center;
 }
 
-
 /* Header */
 header {
     display: flex;
@@ -52,6 +51,11 @@ div img{
     width: 100%;
     padding: 10%;
 }
+.foto-pelicula-popular img{
+    width: 40%;
+    padding: 10%;
+}
+
 
 .div-logo{
     width: 8%;
@@ -68,9 +72,6 @@ div img{
 .div-logoMovie{
     width: 8%;
 }
-
-
-
 
 /* menu de navegacion */
 .menu-nav ul{
@@ -93,7 +94,6 @@ div img{
     text-decoration-line: none;
     font-size: 20px;   
 }
-
 
 /* Formulario de busqueda */
 .buscador{
@@ -131,10 +131,13 @@ header div, .menu-nav ul, .buscador{
 
 
 /* peliculas populares */
+
 .peliculas-populares{
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     justify-content: space-between;
+    align-items: center;
 }
 
 .peliculas-populares article{
@@ -147,7 +150,9 @@ header div, .menu-nav ul, .buscador{
 .series-populares{
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     justify-content: space-between;
+    align-items: center;
 }
 
 .series-populares article{
@@ -161,7 +166,9 @@ header div, .menu-nav ul, .buscador{
 .peliculas-valoradas{
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     justify-content: space-between;
+    align-items: center;
 }
 
 .peliculas-valoradas article{
@@ -253,6 +260,9 @@ a .pc{
 }
 .pie-alternativo{display: none;}
 
+.container{
+    min-height: calc(100vh - 100px - 300px);
+}
 
 /* Media Queries*/
 /*Tablet*/

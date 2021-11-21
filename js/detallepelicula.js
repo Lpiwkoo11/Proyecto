@@ -22,7 +22,7 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=f2acabc2f1f7dfa29f6493c2
 
         document.querySelector('main').innerHTML = `
             <article>
-                <div>
+                <div class="foto-pelicula-popular">
                 <img src="https://image.tmdb.org/t/p/w342${datos.poster_path}" alt="pelicula">
                 </div>
                 <h5>${datos.title}</h5>
