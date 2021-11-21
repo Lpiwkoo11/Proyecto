@@ -20,7 +20,7 @@ window.addEventListener('load', function(){
     
             document.querySelector('main').innerHTML = `
                 <article>
-                    <div>
+                    <div class="foto-serie-popular">
                     <img src="https://image.tmdb.org/t/p/w342${datos.poster_path}" alt="pelicula">
                     </div>
                     <h5>${datos.original_name}</h5>

@@ -68,6 +68,27 @@ body {
  .div-logoMovie{
     width: 8%;
  }
+
+ .foto-pelicula-popular{
+     display: flex;
+     justify-content: space-around;
+ }
+
+ .foto-pelicula-popular img{
+     width: 40%;
+     padding: 10px;
+ }
+
+ .foto-serie-popular{
+     display: flex;
+     justify-content: space-around;
+ }
+
+ .foto-serie-popular img{
+     width: 50%;
+     padding: 10%;
+ }
+ 
   
   
   
