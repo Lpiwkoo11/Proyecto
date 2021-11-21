@@ -244,8 +244,10 @@ a .pc{
 .generos-peliculas{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 18%;
+    margin-top: 15%;
+    
 }
-
 
 /*pie de pagina*/
 .pie-pagina{
