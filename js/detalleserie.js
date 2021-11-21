@@ -19,13 +19,15 @@ window.addEventListener('load', function(){
             console.log(datos);
     
             document.querySelector('main').innerHTML = `
-                <article>
+                <article class=d-series>
                     <div>
                     <img src="https://image.tmdb.org/t/p/w342${datos.poster_path}" alt="pelicula">
                     </div>
                     <h5>${datos.original_name}</h5>
+                    <p>${datos.vote_average}</p>
                     <p>${datos.first_air_date}</p>
-                    <p>${datos.id}</p>
+                    <p>${datos.overview}</p>
+                    <p>${datos.genres[0].name}</p>
                     <button class="fav">Agregar a favoritos</button>
                 </article>
             `;

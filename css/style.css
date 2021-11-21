@@ -172,6 +172,11 @@ body {
   
   
  /*detalle pelicula*/
+ .d-pelicula{
+     width: 30%;
+    margin: auto;
+    text-align: center;
+ }
  .detalle-pelicula{
     margin: auto;
     width: 100%;
@@ -186,6 +191,11 @@ body {
  }
   
  /*detalle serie*/
+ .d-series{
+    width: 30%;
+    margin: auto;
+    text-align: center;
+ }
  .detalle-serie{
    width: 100%;
    margin: auto;

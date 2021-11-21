@@ -20,13 +20,17 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=f2acabc2f1f7dfa29f6493c2
         console.log(datos);
 
         document.querySelector('main').innerHTML = `
-            <article>
+            <article class=d-pelicula>
                 <div class="foto-pelicula-popular">
                 <img src="https://image.tmdb.org/t/p/w342${datos.poster_path}" alt="pelicula">
                 </div>
                 <h5>${datos.title}</h5>
+                <p>${datos.vote_average}</P>
                 <p>${datos.release_date}</p>
-                <p>${datos.id}</p>
+                <p>${datos.runtime} min</p>
+                <p>${datos.overview}</p>
+                <p>${datos.genres[0].name}</p>
+
                 <button class="fav">Agregar a favoritos</button>
             </article>
         `;
