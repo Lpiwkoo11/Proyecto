@@ -19,13 +19,8 @@ window.addEventListener('load', function(){
             console.log(datos);
     
             document.querySelector('main').innerHTML = `
-<<<<<<< HEAD
-                <article>
-                    <div class="foto-serie-popular">
-=======
                 <article class=d-series>
                     <div>
->>>>>>> 2202ec54efa2322adcf3a84db04286f670bda96d
                     <img src="https://image.tmdb.org/t/p/w342${datos.poster_path}" alt="pelicula">
                     </div>
                     <h5>${datos.original_name}</h5>
