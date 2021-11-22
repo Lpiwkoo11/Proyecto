@@ -1,5 +1,8 @@
 window.addEventListener('load', function(){
 
+// API key
+let apiKey = "f2acabc2f1f7dfa29f6493c2fcca003f"
+
 // Array para almacenar ids de favoritos
 let favoritos = [];
 
@@ -11,7 +14,7 @@ console.log(id);
 
 // Fetch
 
-fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=f2acabc2f1f7dfa29f6493c2fcca003f&language=es`)
+fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}&language=es`)
     .then(function(response){
         return response.json();
     })
@@ -73,7 +76,7 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=f2acabc2f1f7dfa29f6493c2
 
 // peliculas valoradas
 
-fetch(`https://api.themoviedb.org/3/movie/top_rated${id}?api_key=f2acabc2f1f7dfa29f6493c2fcca003f`)
+fetch(`https://api.themoviedb.org/3/movie/top_rated${id}?api_key=${apiKey}`)
     .then(function(response){
         return response.json();
     })

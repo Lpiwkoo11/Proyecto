@@ -25,7 +25,7 @@ window.addEventListener('load', function(){
             if(datos.results.length == 0) {
                 document.querySelector('.articulo-buscado').innerHTML += `
                     <article>
-                        <h5>No hay resultados</h5>`
+                        <h5>No hay resultados</h5>`;
             }
 
             //Codigo

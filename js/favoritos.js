@@ -1,5 +1,8 @@
 window.addEventListener('load', function(){
+// API key
+let apiKey = "f2acabc2f1f7dfa29f6493c2fcca003f"
 
+// Array favoritos en ambito scope global
 let favoritos = [];
 
 if (localStorage.getItem('favoritosToStringPeliculas')!=null) {
@@ -11,7 +14,7 @@ if (localStorage.getItem('favoritosToStringPeliculas')!=null) {
 
         console.log(favoritos[i]);
 
-        fetch(`https://api.themoviedb.org/3/movie/${favoritos[i]}?api_key=f2acabc2f1f7dfa29f6493c2fcca003f&language=es`)
+        fetch(`https://api.themoviedb.org/3/movie/${favoritos[i]}?api_key=${apiKey}&language=es`)
             .then(function(response){
                 return response.json();
             })
@@ -52,7 +55,7 @@ if (localStorage.getItem('favoritosToStringSeries')!=null) {
 
         console.log(favoritos[i]);
 
-        fetch(`https://api.themoviedb.org/3/tv/${favoritos[i]}?api_key=f2acabc2f1f7dfa29f6493c2fcca003f&language=es`)
+        fetch(`https://api.themoviedb.org/3/tv/${favoritos[i]}?api_key=${apiKey}&language=es`)
             .then(function(response){
                 return response.json();
             })
@@ -93,7 +96,7 @@ if (localStorage.getItem('favoritosToStringPeliculasValoradas')!=null) {
 
         console.log(favoritos[i]);
 
-        fetch(`https://api.themoviedb.org/3/movie/top_rated${favoritos[i]}?api_key=f2acabc2f1f7dfa29f6493c2fcca003f&language=es`)
+        fetch(`https://api.themoviedb.org/3/movie/top_rated${favoritos[i]}?api_key=${apiKey}&language=es`)
             .then(function(response){
                 return response.json();
             })
