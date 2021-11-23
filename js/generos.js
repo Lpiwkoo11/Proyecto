@@ -1,8 +1,5 @@
-//API Key
-let apiKey = "20342717cddddd7790a3d41e00d1854d"
- 
 // Fetch
-fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}&language=es?`)
+fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=20342717cddddd7790a3d41e00d1854d&language=es?`)
   .then(function(response){
       return response.json();
   })
@@ -18,7 +15,9 @@ fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}&language=
           `;
       };
 })
- 
+
 .catch(function(error){
       console.log("error:" + error);
+      let mensaje = "Intentar en otro momento"
+      alert(mensaje);
 })
