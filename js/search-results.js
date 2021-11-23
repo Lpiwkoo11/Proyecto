@@ -1,5 +1,10 @@
 window.addEventListener('load', function(){
 
+    //gif de carga
+    let gifCargando = document.querySelector('.gif')
+    gifCargando.style.display = "none"
+
+
     // Acceso Query String
     
     let queryString = location.search;
@@ -14,11 +19,6 @@ window.addEventListener('load', function(){
             return response.json();
         })
         .then(function(datos){
-            
-            //gif
-            //document.querySelector(`.gif`).innerHTML = `
-            //<img src="">`
-
 
 
             // Sin resultado
@@ -37,7 +37,7 @@ window.addEventListener('load', function(){
                         <div>
                         <img src="https://image.tmdb.org/t/p/w342${datos.results[i].poster_path}" alt="Imagen">
                         </div>
-                        <a href="detalle.html?id=${datos.results[i].id}">Ver más información</a>
+                        <a href="detallepelicula.html?id=${datos.results[i].id}">Ver más información</a>
                     </article>
                 `;
             }
